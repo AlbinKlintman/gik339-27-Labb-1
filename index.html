@@ -1,19 +1,55 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Labb 1 - Grupp 27</title>
-    <script>
-      console.log('script-tag i head');
-    </script>
   </head>
+  <header>
+    <h1>Labb1 - Grupp 27</h1>
+  </header>
   <body>
+    <p>Färg</p>
+    <textarea name="Färgfält" id="Färgfält1"></textarea>
+    <p>Innehåll</p>
+    <p>Stil på box</p>
+    <button>Ta bort</button>
     <div id="test">bla</div>
 
 
     <script>
       console.log('script-tag i body');
     </script>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labb 1 - Grupp 27</title>
+  </head>
+  <body>
+    <header>
+      <h1>Labb 1 - Grupp 27</h1>
+    </header>
+
+    <label for="color">Färg</label>
+    <input type="text" id="color" name="color" class="textfield" />
+
+    <label for="content">Innehåll:</label>
+    <input type="text" id="content" name="content" class="textfield" />
+
+    <label for="divStyle">Stil på box</label>
+    <input type="checkbox" id="divStyle" name="divStyle" class="checkbox" />
+
+    <button id="removeButton">Ta bort</button>
+
+    <div id="test"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
