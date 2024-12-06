@@ -28,50 +28,13 @@ p {
   margin-bottom: 1em;
 }
 
-.wrapper {
-  max-width: 75rem;
-  margin: 3rem auto;
-  padding: 1rem;
-  font-family: Ubuntu, sans-serif;
-  color: rgb(85, 13, 96);
-  background: white;
-}
 h1 {
   margin-bottom: 1em;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1rem;
 }
-.flex {
-  display: flex;
-  width: 100%;
-  gap: 1rem;
-}
-.flex *:first-child {
-  flex-basis: 40%;
-}
-.flex > *:last-child {
-  flex-grow: 1;
-  font-size: 0.9rem;
-}
-button {
-  padding: 0.3rem 1rem;
-  border-radius: 0.5rem;
-  margin-bottom: 0.3rem;
-  outline: 0;
-  border: 2px solid var(--blue);
-  background: var(--blue);
-  color: white;
-  cursor: pointer;
-}
-button:hover {
-  background: hsl(205, 100%, 58%);
-}
 
-.input-group {
-  display: flex;
-  margin-bottom: 1rem;
-}
 .input-label {
   flex-basis: 25%;
 }
@@ -83,4 +46,53 @@ button:hover {
   background: var(--pink);
   padding: 1rem;
   text-align: center;
+}
+.wrapper {
+  max-width: 75rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  font-family: Ubuntu, sans-serif;
+  color: rgb(85, 13, 96);
+  background: white;
+  text-align: center; /* Gör att textfälten är under rubriken */
+}
+
+.flex {
+  display: flex;
+  flex-direction: column; /* Använd kolumnlayout så att alla element är under varandra */
+  align-items: center; /* Centrera elementen horisontellt */
+  gap: 1rem; /* Lägger till ett gap mellan elementen för att skapa bättre spacing */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column; /* Lägger fält och etiketter i kolumn */
+  align-items: flex-start;
+  width: 100%; /* Anpassa bredden så att den täcker en bra del av skärmen */
+  max-width: 400px; /* Begränsa bredden så att textfälten inte blir för breda */
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: 2px solid rgb(85, 13, 96);
+  color: rgb(85, 13, 96);
+  cursor: pointer;
+  margin-top: 2rem; /* Flyttar knappen längre ner */
+}
+
+button:hover {
+  background: hsl(203, 13%, 74%);
+}
+
+#dynamicDisplay {
+  margin-top: 2rem; /* Ge utrymme mellan input och resultat */
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto; /* Centrera resultatet */
+  box-shadow: 2px 2px 10px #ccc;
 }
